@@ -1,0 +1,10 @@
+.mat-toolbar{
+  background: #282829;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+}
+
+.mat-icon {
+  width: 24px;
+  height: 24px;
+  transform: scale(2);
+}

@@ -1,0 +1,24 @@
+<div style="width: 100%">
+  <mat-toolbar color="primary" role="heading">
+    <button mat-button routerLink="/home" style="padding-left: 3%">Reporting and Management Tool</button>
+
+    <button mat-button [matMenuTriggerFor]="equipmentCheckMenu">Reports</button>
+    <mat-menu #equipmentCheckMenu="matMenu">
+      <button mat-menu-item routerLink="/reports/truck-maintenance">Truck Maintenance</button>
+      <button mat-menu-item routerLink="/reports/ems-kit">EMS Kit</button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="rosterMenu">Roster</button>
+    <mat-menu #rosterMenu="matMenu">
+      <button mat-menu-item routerLink="/roster/crew">Schedule</button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="calendarMenu">Calendar</button>
+    <mat-menu #calendarMenu="matMenu">
+      <button mat-menu-item routerLink="/calendar">Schedule</button>
+      <button mat-menu-item routerLink="/calendar/vacation-request">Create New Vacation Request</button>
+      <button mat-menu-item routerLink="/calendar/view-requests">View Vacation Requests</button>
+    </mat-menu>
+
+  </mat-toolbar>
+</div>
