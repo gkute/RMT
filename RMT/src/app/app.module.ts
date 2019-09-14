@@ -1,15 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from './material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LayoutComponent } from './components/layout/layout.component';
 
 @NgModule({
   declarations: [
@@ -17,11 +19,13 @@ import { FooterComponent } from './components/footer/footer.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
+    LayoutComponent,
   ],
   imports: [
+    CommonModule,
     BrowserModule,
-    HttpClientModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     FlexLayoutModule,
     MaterialModule,
     AppRoutingModule

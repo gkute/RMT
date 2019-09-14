@@ -1,0 +1,74 @@
+::ng-deep .mat-checkbox .mat-checkbox-frame {
+  border-color: #550400;
+}
+
+table {
+  width: auto;
+  table-layout:fixed;
+  background-color: lightgray;
+  margin: auto;
+}
+
+th{
+
+  color: #550400;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  font-family: Verdana,Sans-Serif;
+  display: table-cell;
+  height: 48px;
+  vertical-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-left: 2px solid rgba(0, 0, 0, 0.12);
+  border-right: 2px solid rgba(0, 0, 0, 0.12);
+}
+td{
+  text-align: center;
+  vertical-align: center;
+  color: #801B15;
+  font-size:20px;
+  font-family: Verdana,Sans-Serif;
+  display: table-cell;
+  height: 48px;
+  vertical-align: middle;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-left: 2px solid rgba(0, 0, 0, 0.12);
+  border-right: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+.mat-button, .mat-raised-button{
+  background-color: rgb(167, 164, 164);
+  color: black;
+  align-self: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.mat-card {
+  max-width: 425px;
+  background-color: lightgrey;
+}
+
+.mat-form-field{
+  color:black;
+  text-align: center;
+  max-width: 390px;
+  width: 100%;
+}
+
+.mat-option{
+  color: black;
+  background-color: lightgrey;
+}
+
+.main-container{
+  width: 90%;
+  margin: 0px auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.5%;
+}

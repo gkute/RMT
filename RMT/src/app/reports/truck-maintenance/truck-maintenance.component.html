@@ -1,1 +1,96 @@
-<p>truck-maintenance works!</p>
+<div class="main-container">
+  <h1>Truck Maintenance Checklist</h1>
+
+  <div class="center">
+    <table mat-table #table [dataSource]="dataSource" class="mat-elevation-z8">
+
+      <ng-container matColumnDef="checked">
+        <th mat-header-cell *matHeaderCellDef>Check</th>
+        <td mat-cell *matCellDef="let element">
+          <mat-checkbox [ngClass]="element.checked"></mat-checkbox>
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="item">
+        <th mat-header-cell *matHeaderCellDef>Item</th>
+        <td mat-cell *matCellDef="let element"> {{element.item}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+  <div>
+    <mat-card class="mat-elevation-z8">
+      <mat-card-title>Input Fields</mat-card-title>
+      <mat-form-field>
+        <input matInput [formControl]="startingMiles" required>
+        <mat-placeholder class="placeholder">Starting Miles</mat-placeholder>
+        <mat-error *ngIf="startingMiles.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [formControl]="endingMiles" required>
+        <mat-placeholder class="placeholder">Ending Miles</mat-placeholder>
+        <mat-error *ngIf="endingMiles.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [formControl]="startingHours" required>
+        <mat-placeholder class="placeholder">Starting Hours</mat-placeholder>
+        <mat-error *ngIf="startingHours.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [formControl]="endingHours" required>
+        <mat-placeholder class="placeholder">Ending Hours</mat-placeholder>
+        <mat-error *ngIf="endingHours.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [formControl]="startingGen" required>
+        <mat-placeholder class="placeholder">Starting Gen</mat-placeholder>
+        <mat-error *ngIf="startingGen.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [formControl]="endingGen" required>
+        <mat-placeholder class="placeholder">Ending Gen</mat-placeholder>
+        <mat-error *ngIf="endingGen.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [formControl]="startingCascade" required>
+        <mat-placeholder class="placeholder">Starting Cascade</mat-placeholder>
+        <mat-error *ngIf="startingCascade.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [formControl]="endingCascade" required>
+        <mat-placeholder class="placeholder">Ending Cascade</mat-placeholder>
+        <mat-error *ngIf="endingCascade.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [formControl]="totalMiles" required>
+        <mat-placeholder class="placeholder">Total Miles</mat-placeholder>
+        <mat-error *ngIf="totalMiles.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [formControl]="totalHours" required>
+        <mat-placeholder class="placeholder">Total Hours</mat-placeholder>
+        <mat-error *ngIf="totalHours.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [formControl]="totalFuel" required>
+        <mat-placeholder class="placeholder">Total Fuel</mat-placeholder>
+        <mat-error *ngIf="totalFuel.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [formControl]="totalGenHours" required>
+        <mat-placeholder class="placeholder">Total Gen Hours</mat-placeholder>
+        <mat-error *ngIf="totalGenHours.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [formControl]="totalCascadeHours" required>
+        <mat-placeholder class="placeholder">Total Cascade Hours</mat-placeholder>
+        <mat-error *ngIf="totalCascadeHours.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <mat-card-actions>
+        <button mat-raised-button>Submit</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

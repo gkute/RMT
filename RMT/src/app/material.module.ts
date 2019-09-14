@@ -1,6 +1,4 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material';
 import { MatButtonModule } from '@angular/material';
 import { MatInputModule } from '@angular/material/input';
@@ -31,11 +29,10 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
     MatCheckboxModule,
     MatCheckboxModule,
     MatButtonModule,
@@ -66,11 +63,11 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatSnackBarModule,
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
-    BrowserModule,
-    BrowserAnimationsModule,
     MatCheckboxModule,
     MatCheckboxModule,
     MatButtonModule,
@@ -101,7 +98,9 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatSnackBarModule,
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class MaterialModule { }

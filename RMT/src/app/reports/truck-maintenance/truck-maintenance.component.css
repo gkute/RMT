@@ -1,0 +1,125 @@
+::ng-deep .mat-checkbox-frame {
+  border-color: #550400;
+}
+
+.mat-table {
+  width: 100%;
+  table-layout:fixed;
+  background-color: lightgray;
+
+}
+
+.center {
+  /* margin: auto; */
+  width: 100%;
+  padding: 10px;
+  margin: 0px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #inputTable{
+    padding-left: 30%;
+} */
+
+h1 {
+  text-align:center;
+  color: #550400;
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+}
+
+.mat-header-cell{
+  text-align: center;
+  width: 75px;
+  color: #550400;
+  font-size: 25px;
+  font-weight: bold;
+  display: table-cell;
+  height: 48px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-left: 2px solid rgba(0, 0, 0, 0.12);
+  border-right: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+.mat-cell{
+  text-align: center;
+  color: #801B15;
+  font-size:20px;
+  display: table-cell;
+  height: 48px;
+  max-width: 500px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-left: 2px solid rgba(0, 0, 0, 0.12);
+  border-right: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+.mat-button, .mat-raised-button{
+  background-color: rgb(167, 164, 164);
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  /* width: 100%; */
+  margin: auto;
+}
+
+.mat-card-title{
+  color:#550400;
+  text-align:center;
+  height: 30px;
+}
+
+.mat-card {
+  /* max-width: 250px; */
+  background-color: lightgrey;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-left: 2px solid rgba(0, 0, 0, 0.12);
+  border-right: 2px solid rgba(0, 0, 0, 0.12);
+}
+.mat-card-actions{
+  padding-left: 46%;
+}
+
+.mat-form-field{
+  color:black;
+  text-align: center;
+  max-width: 25%;
+  width: 100%;
+  height: 48px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-left: 2px solid rgba(0, 0, 0, 0.12);
+  border-right: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+.mat-paginator{
+  background-color: lightgray;
+  color: #550400;
+}
+.mat-select-arrow{
+  color: #550400;
+}
+/* ::ng-deep .mat-checkbox-background{
+  background-color: #550400 !important;
+} */
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background,
+.mat-accent .mat-pseudo-checkbox-checked,
+.mat-accent .mat-pseudo-checkbox-indeterminate,
+.mat-pseudo-checkbox-checked,
+.mat-pseudo-checkbox-indeterminate {
+  background-color:#550400 !important;
+}
+
+.main-container{
+  width: 90%;
+  margin: 0px auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.5%;
+}
