@@ -14,7 +14,8 @@ const ELEMENT_DATA: ViewElements[] = [
   { checked: false, item: 'Shears' }, { checked: false, item: 'Lubricant' }, { checked: false, item: 'BP Cuff Adult' },
   { checked: false, item: 'BP Cuff Child' }, { checked: false, item: 'Stethiscope Adult' }, { checked: false, item: 'Stethiscope Child' },
   { checked: false, item: 'Penlight' }, { checked: false, item: 'Disposable Gloves' }, { checked: false, item: 'Baby Asprin' },
-  { checked: false, item: 'Activated Charcoal' }, { checked: false, item: 'Instant Glucose' }, { checked: false, item: 'Epinephrine Auto Injector' },
+  { checked: false, item: 'Activated Charcoal' }, { checked: false, item: 'Instant Glucose' },
+  { checked: false, item: 'Epinephrine Auto Injector' },
   { checked: false, item: 'Copy of Protocols' }, { checked: false, item: 'Trauma Dressing(2)' }, { checked: false, item: 'Burn Sheet' },
   { checked: false, item: 'Ladder Splint(2)' }, { checked: false, item: 'Sam Splint(2)' }, { checked: false, item: 'Kling(8)' },
   { checked: false, item: 'Bite Stick' }, { checked: false, item: 'Triangular Bandage(4)' }, { checked: false, item: 'Ice Pack(2)' },
@@ -28,11 +29,11 @@ const ELEMENT_DATA: ViewElements[] = [
 export class EmsKitComponent implements OnInit {
 
   constructor() { }
+  displayedColumns: string[] = ['checked', 'item'];
+  dataSource = ELEMENT_DATA;
 
   ngOnInit() {
   }
-  displayedColumns: string[] = ['checked', 'item'];
-  dataSource = ELEMENT_DATA;
 
   highlight(element: ViewElements) {
     element.highlighted = !element.highlighted;
